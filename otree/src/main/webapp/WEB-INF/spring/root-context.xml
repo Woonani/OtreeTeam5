@@ -10,7 +10,7 @@
 			value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
 		<property name="jdbcUrl"
 			value="jdbc:log4jdbc:oracle:thin:@localhost:1521:XE"></property>
-		<property name="username" value="KOSA"></property>
+		<property name="username" value="OTREE"></property>
 		<property name="password" value="1004"></property>
 	</bean>
 	<bean id="driverManagerDataSource"
@@ -31,7 +31,7 @@
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="driverManagerDataSource"></property>
 		<property name="mapperLocations" 
-			value="classpath*:com/otree/douzone/mapper/*xml" />
+			value="classpath*:com/otree/douzone/mapper/*.xml" />
 	</bean>
 
 	<bean id="sqlSession"
